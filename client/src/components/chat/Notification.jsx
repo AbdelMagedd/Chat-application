@@ -15,8 +15,6 @@ const Notification = () => {
     markNotificationAsRead,
   } = useContext(ChatContext);
 
-  console.log("noti", notifications);
-
   const unReadNotifications = unReadNotificationsFunc(notifications);
 
   const modifiedNotifications = notifications.map((n) => {
@@ -27,9 +25,6 @@ const Notification = () => {
       senderName: sender?.name,
     };
   });
-  console.log(notifications);
-  console.log("un", unReadNotifications);
-  console.log("mn", modifiedNotifications);
 
   return (
     <div className="notifications">
