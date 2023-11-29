@@ -52,13 +52,13 @@ const UserChat = ({ chat, user }) => {
           <div className="name">{recipientUser?.user?.name}</div>
           <div className="text">
             {latestMessage?.text && (
-              <span>{truncateText(latestMessage.text)}</span>
+              <span>{truncateText(latestMessage?.text)}</span>
             )}
           </div>
         </div>
       </div>
       <div className="d-flex flex-column align-items-end">
-        <div className="date">{moment(latestMessage.createdAt).calendar()}</div>
+        <div className="date">{moment(latestMessage?.createdAt).calendar()}</div>
         <div
           className={
             thisUserNotifications?.length > 0 ? "this-user-notifications" : ""
