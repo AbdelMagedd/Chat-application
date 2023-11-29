@@ -23,23 +23,6 @@ export const ChatContextProvider = ({ children, user }) => {
   const [notifications, setNotifications] = useState([]);
   const [allUsers, setAllUsers] = useState([]);
 
-  console.log(notifications, "hhhhhhhhhhhhhhhhhhhhhhhhhh");
-
-  console.log("current caht ", currentChat);
-
-  // useEffect(() => {
-  //     const newSocket = io('http://localhost:5000')
-  //     setSocket(newSocket)
-  //     return () => {newSocket.disconnect()}
-  // },[user])
-
-  // useEffect(() => {
-  //     if (socket === null) return
-  //     socket.emit('addNewUser', user?._id)
-  //     socket.on('getOnlineUsers',(res) => {setOnlineUsers(res)} )
-
-  // }, [socket]);
-
   useEffect(() => {
     const newSocket = io("http://localhost:5000");
 
