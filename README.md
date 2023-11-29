@@ -37,8 +37,9 @@ This is a real-time chat application built using the MERN (MongoDB, Express.js, 
    - Add the following variables:
 
      ```env
-     PORT=5000
-     MONGODB_URI=your_mongodb_connection_string
+     MONGO_URI= mongodb+srv://yourUserName:yourPassword@cluster0.f0injnn.mongodb.net/Chat-app?retryWrites=true&w=majority
+     JWT_SECRET = *create jwt secret or just type something that would be difficult to asume*
+     JWT_LIFETIME= 30d
      ```
 
 4. Start the server:
