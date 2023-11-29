@@ -12,7 +12,6 @@ function Chat() {
   const {user} = useContext(AuthContext)
   const {userChatError,userChats , isUserChatLoading ,updateCurrentChat} = useContext(ChatContext)
 
-  console.log("use chats " , userChats)
   return (
     <Container>
       <PotentialChats />
